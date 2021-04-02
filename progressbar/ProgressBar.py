@@ -102,17 +102,3 @@ class ProgressBar(object):
             self.updatefile()
         else:
             self.updatescreen()
-
-def main():
-
-    pb = ProgressBar()
-    # pb = ProgressBar("progres.txt")
-
-    total = 10
-    for x in range(total):
-        pb.update(x/total)
-        time.sleep(1)
-    pb.update(1)
-
-if __name__ == "__main__":
-    main()
